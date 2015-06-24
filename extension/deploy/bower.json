@@ -1,0 +1,24 @@
+{
+  "name": "playduino",
+  "version": "0.0.1",
+  "homepage": "https://github.com/DecodedCo/playduino",
+  "authors": [
+    "(alexwalker <alex@decoded.com>)"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.2",
+    "components-font-awesome": "~4.3.0"
+  }
+}

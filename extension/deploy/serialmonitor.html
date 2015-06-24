@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="bower_components/normalize.css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/components-font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="styles/loader.css">
+    <link rel="stylesheet" type="text/css" href="styles/serialmonitor.css">
+    <link href="dosis.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="styles/codemirror.css">
+    <link rel="stylesheet" type="text/css" href="styles/decoded-cm.css">
+  </head>
+  <body>
+    
+    <header class="top-bar">
+      <div style="float:right;font-size:20px;color:white;">alpha v0.1</div>
+    </header>
+
+    <section class="column editor">
+      <textarea id="text-editor"  class="text-editor" wrap="hard">
+int led = 13;
+void setup()
+{
+  pinMode(led, OUTPUT);
+}
+void loop()
+{
+    digitalWrite(led, HIGH);
+    delay(250);
+    digitalWrite(led, LOW);
+    delay(250);
+}</textarea>
+    </section>
+    <section id="config" class="column controls">
+      <section id="devices">
+        <select id="devices_menu" class="btn btn-primary">
+          <option class="btn btn-primary">choose your arduino</option></select><button class="btn btn-primary" id="devices_refresh"><i class="fa fa-refresh"></i></button>
+
+
+        <div class="main-actions">
+          <button class="btn btn-primary" id="compile_button"><i class="fa fa-code"></i> Compile</button>
+          <button class="btn btn-primary" id="uploader_button"><i class="fa fa-play"></i> Upload</button>
+        </div>
+        <section class="level2">
+
+            <div id="logging_config" class="section left-holder">
+              <div class="label">Logging level</div>
+              <select class="btn btn-primary" id="log_level_picker">
+                <option value="0" selected>Errors only</option>
+                <option value="1">Normal</option>
+                <option value="2">Debugging</option>
+                <option value="3">Verbose debugging</option>
+              </select>
+            </div>
+
+
+            <div class="loader" id="main-loader">Loading</div>
+
+
+          </section>
+
+      </section>
+
+
+      <section id="serialmonitor">
+          <h5 class="box-label">Serial</h5>
+          <div id="fromdevice_data" class="fromdevice_data"></div>
+          <div id="serial-input">
+            <input id="todevice_data" class="todevice_data" type="text">
+            <button class="btn btn-primary todevice_send" id="todevice_send">Send</button>
+          </div>
+          <div id="serialmon" class="text-right">
+            <button class="btn btn-primary" id="disconnect">Disconnect</button>
+            <button class="btn btn-primary" id="connect">Connect to Serial</button>
+          </div>
+      </section>
+      <div id="status-wrapper">
+        <h5 class="box-label">Status</h5>
+        <section id="status" class="status"></section>
+      </div>
+    </section>
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="js/module.js"></script>
+  </body>
+</html>

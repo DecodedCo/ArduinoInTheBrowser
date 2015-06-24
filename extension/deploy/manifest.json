@@ -1,0 +1,25 @@
+{
+  "name": "Playduino",
+  "version": "0.2",
+  "manifest_version": 2,
+  "description": "Playduino - Arduino in the browser",
+   "icons": {
+    "16": "icon_16.png",
+    "128": "icon_128.png"
+  },
+  "browser_action": {
+    "default_icon": "icon_128.png",
+    "default_popup": "popup.html"
+  },
+  "app": {
+    "background": {
+      "scripts": [ "launcher.js" ]
+    }
+  },
+  "permissions": [
+    "serial",
+    "usb",
+    "http://*/",
+    "storage"
+  ]
+}

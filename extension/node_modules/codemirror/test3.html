@@ -1,0 +1,16 @@
+<!doctype html>
+
+<meta charset="utf-8">
+<script src="lib/codemirror.js"></script>
+<link rel=stylesheet href="lib/codemirror.css">
+
+<div contenteditable=true style="border: 1px solid black">
+fooo<em>bar</em>baz
+</div>
+
+<script>
+var cm = CodeMirror(document.body, {}), i = 0;
+setInterval(function() {
+  cm.setValue("abc" + (++i));
+}, 500);
+</script>

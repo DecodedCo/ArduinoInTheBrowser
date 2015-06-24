@@ -1,0 +1,175 @@
+html {
+          box-sizing: border-box;
+        }
+
+        body {
+          font-size: 16px;
+          font-family: Dosis,sans-serif;
+          padding:0;
+          margin:0;
+          color:#333;
+        }
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+
+        .top-bar {
+          background-color: #e0534c;
+          padding: 10px;
+          height: 50px;
+        }
+        .logo {
+          height:30px;
+          margin-left: .75em;
+        }
+        .column {
+          height:100%;
+          width:40%;
+          float:left;
+        }
+        section#config {
+          width: 60%;
+        }
+          .editor {
+            border-right:1px solid #ccc;
+
+          }
+          .controls {
+            padding:20px;
+          }
+        .btn, .btn-default, button {
+          display: inline-block;
+          margin: 3px;
+          font-weight: 400;
+          text-align: center;
+          cursor: pointer;
+          white-space: nowrap;
+          padding: 4px 12px;
+          font-size: 18px;
+          border-radius: 0;
+          border: 1px solid rgba(151,151,151,.4);
+          background-color: transparent;
+
+          text-decoration: none;
+          border-radius: 5px;
+          line-height: 1rem;
+        }
+        .btn-primary {
+          color: #e0534c;
+          border-color: #e0534c;
+        }
+        .main-actions .btn-primary {
+          font-size: 1.4rem;
+          padding: 8px 24px;
+          height: auto;
+        }
+        .btn-primary i {
+          color: #e0534c;
+        }
+        .text-editor {
+
+        }
+        .devices_menu {
+          display:block;
+        }
+
+        .level2 {
+          width: 100%;
+          display: block;
+          margin-top: 16px;
+          float: left;
+          clear: both;
+          margin-bottom: 3rem;
+        }
+
+        .level2 .left-holder {
+          width:49%;
+          float: left;
+        }
+
+        .level2 .right-holder {
+          width:49%;
+          float: right;
+        }
+
+        .fromdevice_data {
+          height:250px;
+          border:1px solid #eee;
+          padding: 0.6rem;
+          border-radius: 0px 5px 0px 0px;
+          overflow-y: scroll;
+          margin: 0;
+          margin-bottom: 1em;
+        }
+        .todevice_data {
+          border: 1px solid #eee;
+          padding: 0.6rem;
+          border-radius: 0px 5px 0px 0px;
+          width: 77%;
+          padding: 0.5rem;
+          margin: 0;
+          margin-right: 2%;
+        }
+        .todevice_send {
+          width:20%;
+          margin: 0;
+        }
+        .status {
+          border:1px solid #eee;
+          border-radius: 0px 5px 0px 0px;
+          padding: 0.6rem;
+          height: 250px;
+          overflow-y: scroll;
+          margin-bottom: 1em;
+        }
+        section#serialmonitor, section#status-wrapper {
+          float: left;
+          width: 49%;
+          margin-right: 2%;
+          margin-top: 1em;
+        }
+        #serialmon button {
+          float: right;
+        }
+        section#status-wrapper {
+          margin-right: 0;
+        }
+
+        #logging_config {
+          display: none;
+        }
+
+        .main-actions {
+          float: right;
+        }
+
+
+        #text-editor {
+          width: 100%;
+          min-height: 100%;
+          height: calc(100% - 50px);
+          display: block;
+          position: relative;
+        }
+
+        .CodeMirror {
+          height: 100%;
+        }
+        .box-label {
+          margin: 0;
+          background: white;
+          border: solid 1px #eee;
+          display: inline;
+          padding: 2px 13px;
+          border-bottom: none;
+          position: relative;
+          z-index: 10;
+          font-size: 0.8rem;
+          bottom: 1px;
+          border-radius: 5px 5px 0px 0px;
+          letter-spacing: 1px;
+          color: #ccc;
+        }
+        pre {
+          overflow: visible;
+        }

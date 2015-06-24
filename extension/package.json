@@ -1,0 +1,25 @@
+{
+  "name": "playduino",
+  "version": "0.0.1",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:DecodedCo/playduino.git"
+  },
+  "author": "Alex Walker",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/DecodedCo/playduino/issues"
+  },
+  "homepage": "https://github.com/DecodedCo/playduino",
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "grunt-browserify": "~3.3.0",
+    "codemirror": "~4.12.0",
+    "bower": "~1.3.12"
+  }
+}

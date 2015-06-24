@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="lib/codemirror.css" />
+<script src="lib/codemirror.js"></script>
+<style>
+  #container {
+    width: 600px;
+  border: 1px solid brown;
+  }
+  body { text-rendering: optimizelegibility; }
+</style>
+<body>
+<div id="container"></div>
+<script>
+var container = document.getElementById('container');
+
+var editor = new CodeMirror(container, {
+  lineNumbers: true,
+  value : "flkasfldsak jfdsalkdfjd salfkjdsa flkdsj flksajf dsalkfj sadlkfjdsa flkdsaj flkdsafj dsalfkjsa flkdsa jfsadlkfj dsalfjdsa flkdsaj faf",
+  lineWrapping: true
+});
+window.now = true;
+console.log(editor.charCoords({line: 0, ch: 67}, "local"));
+</script>
+</body>

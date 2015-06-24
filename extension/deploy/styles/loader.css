@@ -1,0 +1,71 @@
+@-webkit-keyframes gogoloader {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.routers-active #main-loader {
+  display: none;
+}
+
+.loading-active #main-loader {
+  display: block;
+}
+
+#main-loader {
+  display: none;
+}
+
+.loader {
+  color: #ccc;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+  z-index: 10000;
+  text-transform: uppercase;
+  position: absolute;
+  right: 20px;
+}
+
+.loader:before,
+.loader:after {
+  opacity: 0;
+  box-sizing: border-box;
+  content: "\0020";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 50px #e0534c, inset 0 0 50px #e0534c;
+}
+
+.loader-no-height{
+  margin: 0 auto -120px auto;
+}
+
+.loader:after {
+  z-index: 1;
+  -webkit-animation: gogoloader 2s infinite 1s;
+  animation: gogoloader 2s infinite 1s;
+}
+
+.loader:before {
+  z-index: 2;
+  -webkit-animation: gogoloader 2s infinite;
+  animation: gogoloader 2s infinite;
+}
+

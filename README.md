@@ -1,7 +1,8 @@
 # Playduino
 
 ## Arduino in the browser
-
+* Thanks to Mr Jones, who started me off: https://github.com/mrjones/Chrome-Arduino
+*
 * This project got closed down at Decoded and so I no longer maintain it at work, however I think its cool so Im more than happy to continue looking after it. With community help ;)
 * Im alex at Decoded dot com if anyone wants me....
 ## Installation instructions

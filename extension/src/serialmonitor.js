@@ -1,7 +1,7 @@
 var uploader = require("./uploader.js");
 var logging = require("./logging.js");
-// var ipAddress = '172.16.0.66'
-var ipAddress = "playduino.server.com"
+// var urlAddress = '172.16.0.66'
+var urlAddress = "playduino.server.com"
 
 var log = logging.log;
 var kDebugError = logging.kDebugError;
@@ -76,7 +76,7 @@ function beginCompilation(){
   var program = document.getElementById("text-editor").value;
   document.getElementById("status").innerHTML = "";
   console.log("program: " + program);
-  $.post( "http://"+ipAddress+"/App/program", { "program": program } )
+  $.post( "http://"+urlAddress+"/App/program", { "program": program } )
    .done(function( data ) {
     loadingAnimation(false);
     // log(kDebugFine, data.message );
@@ -112,7 +112,7 @@ function beginUpload() {
 
   var protocolMenu = document.getElementById("protocol");
   var protocol = "stk500"; //forcing stk500 protocol
-  hexLocation = "http://"+ipAddress+"/hex";
+  hexLocation = "http://"+urlAddress+"/hex";
 
   uploader.uploadSketch(selectedPort, protocol, hexLocation);
 }
@@ -265,9 +265,8 @@ function binaryToString(buffer) {
   return String.fromCharCode.apply(null, chars);
 }
 
-function connectToWebsite(u, handler) {
+function connectToWebsite(url, handler) {
 
-  var url = "http://futuretech.decoded.com/"+u;
   console.log("connecting to website: " + url);
   log(kDebugFine, "Fetching: " + url)
   var xhr = new XMLHttpRequest();

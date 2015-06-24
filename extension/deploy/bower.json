@@ -1,7 +1,7 @@
 {
-  "name": "playduino",
+  "name": "ArduinoInTheBrowser",
   "version": "0.0.1",
-  "homepage": "https://github.com/DecodedCo/playduino",
+  "homepage": "https://github.com/DecodedCo/ArduinoInTheBrowser",
   "authors": [
     "(alexwalker <alex@decoded.com>)"
   ],

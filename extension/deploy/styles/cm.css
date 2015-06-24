@@ -21,7 +21,7 @@ span.cm-header {color: blue;}
 span.cm-quote {color: #090;}
 span.cm-hr {color: #999;}
 span.cm-link {color: #00c;}
-.cm-s-decoded .CodeMirror-gutter { border: none;}
+.cm-s .CodeMirror-gutter { border: none;}
 
 /* Color scheme for code-mirror */
 .cm-s-solarized {
